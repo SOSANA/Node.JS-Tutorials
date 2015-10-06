@@ -1,6 +1,24 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
-
+#
+.project
+*.log
+*.sublime-project
+*.sublime-workspace
+*.orig
+.idea/
+*.dmp
+*.7z
+*.map
+.tags
+.tags_sorted_by_file
 .codio
+.settings
+main.js
+.c9
+
+*.module-cache*
 node_modules
-npm-debug.log
+style.css
+static/assets/css/*.css
+static/assets/js/*.js
