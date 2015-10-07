@@ -82,6 +82,10 @@
  * 		given these things as function parameters
  * 		ref: slides/moduleExports
  *
+ * Mutate:
+ * 	- to change something
+ * 	- ex: adding a method or property to an object means your've mutated that object
+ *
  * Name/Value Pair:
  * 	- a name which maps to a value
  * 	- the name may be defined more than once,but only can have one value in
