@@ -62,4 +62,16 @@
  * Module:
  * 	- a reusable block of code whose existence does not accidentally impact
  * 		other code. JavaScript didn't have this before
+ *
+ * Name/Value Pair:
+ * 	- a name which maps to a value
+ * 	- the name may be defined more than once,but only can have one value in
+ * 		any given context
+ * 	- that value may be more name/value paris
+ * 	- ref: section4/D4_ObjectLiterals
+ *
+ * Object:
+ * 	- a collection of name/value pairs
+ * 	- the simplest definition when talking about javascript
+ * 	- ref: section4/D4_ObjectLiterals
  */
