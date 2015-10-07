@@ -87,4 +87,7 @@
  * Primitive:
  * 	- a type of data that represents a single value
  * 	- like a number or a string. In other words, not an object
+ *
+ * Scope:
+ * 	- where in code you have access to particular variable or function
  */
