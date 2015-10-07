@@ -43,11 +43,20 @@
  * 			- put them in arrays and more
  * 	- ref: section4/D2_FirstClassFunctions
  *
+ * Function constructors:
+ * 	- a normal function that is used to construct objects
+ * 	- the 'this' variable points a new empty object, and that object is returned
+ * 		from the function automatically
+ *
  * Function Expressions:
  * 	- a block of code that results in a values
  * 	- are possible in javascript because functions are First-Class.
  * 	- ref: section4/D2_FirstClassFunctions
  *
+ * Inheritance:
+ * 	- one object gets access to the properties and methods of another object
+ *  - ref: section4/D5_PrototypalInheritance
+ *  
  * Invoke:
  * 	- run the function
  * 	- we can also say 'call' the function
