@@ -71,6 +71,11 @@
  * Module:
  * 	- a reusable block of code whose existence does not accidentally impact
  * 		other code. JavaScript didn't have this before
+ * 	- 'require' is a function, that you pass a 'path' too
+ * 	- 'module.exports' is what the require function returns
+ * 	- this works because your code is actually wrapped in a function that is
+ * 		given these things as function parameters
+ * 		ref: slides/moduleExports	
  *
  * Name/Value Pair:
  * 	- a name which maps to a value
