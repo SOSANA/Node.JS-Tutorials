@@ -61,6 +61,11 @@
  * 	- run the function
  * 	- we can also say 'call' the function
  *
+ * JSON (JavaScript Object Notation):
+ * 	- a standard for structuring data
+ * 	- inspired by JavaScript Object Literals
+ * 	- JavaScript engines are built to understand it
+ *
  * Machine Code (Language):
  *  - programming languages spoken by computer processors
  *  - every program you run on your computer has been converted (compiled)
@@ -75,7 +80,7 @@
  * 	- 'module.exports' is what the require function returns
  * 	- this works because your code is actually wrapped in a function that is
  * 		given these things as function parameters
- * 		ref: slides/moduleExports	
+ * 		ref: slides/moduleExports
  *
  * Name/Value Pair:
  * 	- a name which maps to a value
