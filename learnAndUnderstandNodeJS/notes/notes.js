@@ -92,11 +92,16 @@
  * Object:
  * 	- a collection of name/value pairs
  * 	- the simplest definition when talking about javascript
- * 	- ref: section4/D4_ObjectLiterals
+ * 	- ref: section4/D4_ObjectLiterals/
  *
  * Primitive:
  * 	- a type of data that represents a single value
  * 	- like a number or a string. In other words, not an object
+ *
+ * Revealing Module Pattern:
+ * 	- exposing only the properties and methods you want via an returned object
+ * 	- very common and clean way to structure and protect code within modules
+ * 	-	ref: section4/D11_ModulePatterns/Starter/greet5
  *
  * Scope:
  * 	- where in code you have access to particular variable or function
