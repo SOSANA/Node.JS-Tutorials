@@ -56,7 +56,7 @@
  * Inheritance:
  * 	- one object gets access to the properties and methods of another object
  *  - ref: section4/D5_PrototypalInheritance
- *  
+ *
  * Invoke:
  * 	- run the function
  * 	- we can also say 'call' the function
@@ -83,4 +83,8 @@
  * 	- a collection of name/value pairs
  * 	- the simplest definition when talking about javascript
  * 	- ref: section4/D4_ObjectLiterals
+ *
+ * Primitive:
+ * 	- a type of data that represents a single value
+ * 	- like a number or a string. In other words, not an object
  */
