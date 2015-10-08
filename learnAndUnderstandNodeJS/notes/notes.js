@@ -39,6 +39,10 @@
  * 		- system events: comes from C++ Core (libv)
  * 		- custom events: comes from JavaScript core (event emitter)
  *
+ * Event Listener:
+ * 	- the code that responds to an event
+ * 	= in JavaScript's case, the listener will be a function
+ *
  * First-Class Functions:
  * 	- everything you can do with other types (strings, numbers, etc) you can
  * 		do with functions.
