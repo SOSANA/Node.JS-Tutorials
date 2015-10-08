@@ -124,4 +124,8 @@
  *
  * Scope:
  * 	- where in code you have access to particular variable or function
+ *
+ * Template Literal:
+ * 	- a way to concatenate strings in JavaScript (ES6)
+ * 	- easier to work with than a bunch of strings concatenated with '+'
  */
