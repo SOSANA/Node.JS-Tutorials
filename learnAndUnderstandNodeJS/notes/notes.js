@@ -33,6 +33,12 @@
  *  - the standard javascript is based on
  *  - needed a standard since there are many engines
  *
+ * Event:
+ * 	- something that has happened in our app that we can respond to
+ * 	- in node we actually talk about two different kinds of events
+ * 		- system events: comes from C++ Core (libv)
+ * 		- custom events: comes from JavaScript core (event emitter)
+ *
  * First-Class Functions:
  * 	- everything you can do with other types (strings, numbers, etc) you can
  * 		do with functions.
