@@ -7,6 +7,7 @@ function Greetr() {
 }
 // takes two parameters, first being the function we create, and second
 // being from the module we wish to inherit from, ex: events
+// Greetr inherits from EventEmitter
 util.inherits(Greetr, EventEmitter);
 // creating a new method greet that logs a greeting and emits this change
 Greetr.prototype.greet = function(data) {
