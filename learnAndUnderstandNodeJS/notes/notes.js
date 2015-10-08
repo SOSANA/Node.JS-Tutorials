@@ -83,6 +83,11 @@
  *  - Node and V8 are written in C++, and is closer to the machine code
  *  - ref: notes/levelOfAbstraction.png
  *
+ * Magic String:
+ * 	- a string that has some special meaning in our code
+ * 	- this is bad because it makes it easy for a typo to cause a bug, and
+ * 		hard for tools to help us find it
+ *
  * Module:
  * 	- a reusable block of code whose existence does not accidentally impact
  * 		other code. JavaScript didn't have this before
