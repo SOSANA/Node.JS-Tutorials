@@ -128,4 +128,5 @@
  * Template Literal:
  * 	- a way to concatenate strings in JavaScript (ES6)
  * 	- easier to work with than a bunch of strings concatenated with '+'
+ * 	- ref: section5/E7_ES6TemplateStrings
  */
