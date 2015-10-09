@@ -12,11 +12,21 @@
  *  - values you give your program that affect how it runs
  *  - essentially passing parameters to a function
  *
+ * Aynchronous:
+ * 	- more than one process running simultaneously
+ * 	- node does things asynchronously. V8 does not
+ *
  * BreakPoint:
  *  - a spot in our code where we tell a debugging tool to pause the execution
  *    of our code so we can figure out what's going on
  *  - ref: section4/D2_FirstClassFunctions & watch lecture 17
  *  	https://www.udemy.com/understand-nodejs/learn/#/lecture/3484570
+ *
+ * Callback:
+ * 	- a function passed to some other function, which we assume will be invoked
+ * 		at some point
+ * 	- the function 'calls back' invoking the function you give it when it is
+ * 		done doing its work
  *
  * Command Line Interface (cli):
  *  - a utility to type commands to your computer rather than click
@@ -124,6 +134,12 @@
  *
  * Scope:
  * 	- where in code you have access to particular variable or function
+ *
+ * Synchronous:
+ * 	- one process executing at a time
+ * 	- JavaScript is synchronous. Think of it as only one line of code executing
+ * 		at a time.
+ * 	- nodejs is asynchronous
  *
  * Syntactic Sugar:
  * 	- a feature that only changes how you type something, but nothing changes
