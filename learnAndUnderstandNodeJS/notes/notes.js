@@ -21,6 +21,10 @@
  * 	- the core of the math that computers are based on
  * 	- each one or zero is called a 'bit' or 'binary digit'
  *
+ * BYTE:
+ * 	- 8 bits
+ * 	- ex: 00101100
+ *
  * Character Encoding:
  * 	- how characters are stored in binary
  * 	- the numbers (or code points) are converted and stored in binary
