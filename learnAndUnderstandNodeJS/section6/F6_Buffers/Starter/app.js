@@ -1,4 +1,5 @@
-// were taking this string and turning it into binary data
+// taking this string and turning it into binary data
+// we did not require buffer as nodejs makes buffers global
 var buf = new Buffer('Hello', 'utf8');
 // logging binary data
 console.log(buf);
