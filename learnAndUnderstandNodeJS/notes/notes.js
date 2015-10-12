@@ -65,6 +65,7 @@
  * Chunk:
  * 	- a piece of data being sent through a stream
  * 	- data is split in 'chunks' and streamed
+ * 	- ex: section6/F9_Streams
  *
  * Command Line Interface (cli):
  *  - a utility to type commands to your computer rather than click
@@ -170,6 +171,12 @@
  * 	- a collection of name/value pairs
  * 	- the simplest definition when talking about javascript
  * 	- ref: section4/D4_ObjectLiterals/
+ *
+ * Pipe:
+ * 	- connecting two streams by writing to one stream what is being read
+ * 		from another
+ * 	- in node you pipe from a readable stream to a writable stream
+ * 	- ex: section6/F9_Streams
  *
  * Primitive:
  * 	- a type of data that represents a single value
