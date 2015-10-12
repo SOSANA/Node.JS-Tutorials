@@ -71,6 +71,12 @@
  *  - the standard javascript is based on
  *  - needed a standard since there are many engines
  *
+ * Error-First Callback:
+ * 	- callbacks take an error object as their first parameter
+ * 	- null if no error, otherwise will contain an object defining the error
+ * 	- this is a standard so we know in what order to place our parameters for
+ * 		our callbacks
+ *
  * Event:
  * 	- something that has happened in our app that we can respond to
  * 	- in node we actually talk about two different kinds of events
