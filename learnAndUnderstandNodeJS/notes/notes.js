@@ -16,11 +16,35 @@
  * 	- more than one process running simultaneously
  * 	- node does things asynchronously. V8 does not
  *
+ * Binary Data:
+ * 	- data stored in binary (sets of 1s and 0s)
+ * 	- the core of the math that computers are based on
+ * 	- each one or zero is called a 'bit' or 'binary digit'
+ *
+ * Character Encoding:
+ * 	- how characters are stored in binary
+ * 	- the numbers (or code points) are converted and stored in binary
+ * 	- numbers in base 10 to numbers in base 2 to binary and how many bits/digits
+ * 		we are using to store that
+ * 	- ex: 'UTF-8' stores 8 bits, see slides for more info
+ *
+ * Character Set:
+ * 	- a representation of characters as numbers
+ * 	- each character gets a number.
+ * 	- 'Unicode' and 'ASCII' are character sets
+ * 	- numbers to letters
+ * 	- ex: see slides for more info
+ *
  * BreakPoint:
  *  - a spot in our code where we tell a debugging tool to pause the execution
  *    of our code so we can figure out what's going on
  *  - ref: section4/D2_FirstClassFunctions & watch lecture 17
  *  	https://www.udemy.com/understand-nodejs/learn/#/lecture/3484570
+ *
+ * Buffer:
+ * 	- a temporary holding spot for data being moved from one place to another
+ * 	- intentionally limited in size
+ * 	- ex: think of watching a video "its buffering"
  *
  * Callback:
  * 	- a function passed to some other function, which we assume will be invoked
@@ -118,6 +142,10 @@
  * 	- that value may be more name/value paris
  * 	- ref: section4/D4_ObjectLiterals
  *
+ * Non-Blocking:
+ * 	- Doing other things without stopping your programming from running
+ * 	- this is made possible by node's doing things asynchronously
+ *
  * Object:
  * 	- a collection of name/value pairs
  * 	- the simplest definition when talking about javascript
@@ -134,6 +162,11 @@
  *
  * Scope:
  * 	- where in code you have access to particular variable or function
+ *
+ * Stream:
+ * 	- a sequence of data made available over time
+ * 	- pieces of data that eventually combine into a whole
+ * 	- ex: watching a video, we are streaming small amounts of the video at once
  *
  * Synchronous:
  * 	- one process executing at a time
