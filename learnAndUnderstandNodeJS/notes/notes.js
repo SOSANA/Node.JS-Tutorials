@@ -8,6 +8,10 @@
  *      - V8 (google), SpiderMonkey (Mozilla | MDN), and many more
  *      - ref: https://en.wikipedia.org/wiki/List_of_ECMAScript_engines
  *
+ * Abstract (Base) Class:
+ * 	- a type of constructor you never work directly with, but inherit from
+ * 	- we create new custom objects which inherit from the abstract base class
+ *
  * Arguments:
  *  - values you give your program that affect how it runs
  *  - essentially passing parameters to a function
@@ -23,7 +27,9 @@
  *
  * BYTE:
  * 	- 8 bits
+ * 	- 1 KB = 1024 Bytes
  * 	- ex: 00101100
+ *
  *
  * Character Encoding:
  * 	- how characters are stored in binary
@@ -55,6 +61,10 @@
  * 		at some point
  * 	- the function 'calls back' invoking the function you give it when it is
  * 		done doing its work
+ *
+ * Chunk:
+ * 	- a piece of data being sent through a stream
+ * 	- data is split in 'chunks' and streamed
  *
  * Command Line Interface (cli):
  *  - a utility to type commands to your computer rather than click
