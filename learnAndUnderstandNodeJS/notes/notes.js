@@ -12,6 +12,12 @@
  * 	- a type of constructor you never work directly with, but inherit from
  * 	- we create new custom objects which inherit from the abstract base class
  *
+ * API:
+ * 	- a set of tools for building a software application
+ * 	- stands for 'Application Programming Interface'
+ * 	- on the web the tools are usually made available via a set of urls which
+ * 		accept and send only data via HTTP and TCP/IP
+ *
  * Arguments:
  *  - values you give your program that affect how it runs
  *  - essentially passing parameters to a function
@@ -25,11 +31,27 @@
  * 	- the core of the math that computers are based on
  * 	- each one or zero is called a 'bit' or 'binary digit'
  *
+ * BreakPoint:
+ *  - a spot in our code where we tell a debugging tool to pause the execution
+ *    of our code so we can figure out what's going on
+ *  - ref: section4/D2_FirstClassFunctions & watch lecture 17
+ *  	https://www.udemy.com/understand-nodejs/learn/#/lecture/3484570
+ *
+ * Buffer:
+ * 	- a temporary holding spot for data being moved from one place to another
+ * 	- intentionally limited in size
+ * 	- ex: think of watching a video "its buffering"
+ *
  * BYTE:
  * 	- 8 bits
  * 	- 1 KB = 1024 Bytes
  * 	- ex: 00101100
  *
+ * Callback:
+ * 	- a function passed to some other function, which we assume will be invoked
+ * 		at some point
+ * 	- the function 'calls back' invoking the function you give it when it is
+ * 		done doing its work
  *
  * Character Encoding:
  * 	- how characters are stored in binary
@@ -44,23 +66,6 @@
  * 	- 'Unicode' and 'ASCII' are character sets
  * 	- numbers to letters
  * 	- ex: see slides for more info
- *
- * BreakPoint:
- *  - a spot in our code where we tell a debugging tool to pause the execution
- *    of our code so we can figure out what's going on
- *  - ref: section4/D2_FirstClassFunctions & watch lecture 17
- *  	https://www.udemy.com/understand-nodejs/learn/#/lecture/3484570
- *
- * Buffer:
- * 	- a temporary holding spot for data being moved from one place to another
- * 	- intentionally limited in size
- * 	- ex: think of watching a video "its buffering"
- *
- * Callback:
- * 	- a function passed to some other function, which we assume will be invoked
- * 		at some point
- * 	- the function 'calls back' invoking the function you give it when it is
- * 		done doing its work
  *
  * Chunk:
  * 	- a piece of data being sent through a stream
@@ -81,6 +86,11 @@
  * ECMAScript:
  *  - the standard javascript is based on
  *  - needed a standard since there are many engines
+ *
+ * ENDPOINT:
+ * 	- one url in a web API
+ * 	- sometimes that endpoint (URL) does multiple things by making choices
+ * 		based on the HTTP request headers
  *
  * Error-First Callback:
  * 	- callbacks take an error object as their first parameter
@@ -241,7 +251,7 @@
  * 	- text designed to be the basis for final text or content after being processed
  * 	- there's usually some specific template language, so the template system knows
  * 		how to replace placeholders with real values
- * 		
+ *
  * Template Literal:
  * 	- a way to concatenate strings in JavaScript (ES6)
  * 	- easier to work with than a bunch of strings concatenated with '+'
