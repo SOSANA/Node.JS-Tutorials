@@ -118,6 +118,11 @@
  * 	- are possible in javascript because functions are First-Class.
  * 	- ref: section4/D2_FirstClassFunctions
  *
+ * HTTP:
+ * 	- a set of rules (and a format) for data being transferred on the web
+ * 	- stands for 'HyperText Transfer Protocol'
+ * 	- it's a format (of various) defining data being transferred via TCP/IP
+ *
  * Inheritance:
  * 	- one object gets access to the properties and methods of another object
  *  - ref: section4/D5_PrototypalInheritance
@@ -147,6 +152,11 @@
  * 	- a method returns an object so we can keep calling more methods
  * 	- sometimes it returns the parent object (called 'cascading') and sometimes
  * 		some other Object
+ *
+ * MIME Type:
+ * 	- a standard for specifying the type of data being sent
+ * 	- stands for 'Multipurpose Internet Mail Extensions'
+ * 	- ex: applications/json, text/html, image/jpeg
  *
  * Module:
  * 	- a reusable block of code whose existence does not accidentally impact
