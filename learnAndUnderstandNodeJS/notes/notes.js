@@ -183,6 +183,21 @@
  * 	- in node you pipe from a readable stream to a writable stream
  * 	- ex: section6/F9_Streams
  *
+ * Port:
+ * 	- once a computer receives a packet, how it knows what program to send it to
+ * 	- when a program is setup on the operating system to receive packets from a
+ * 		a particular port, it is said that the program is 'listening' to that port
+ *
+ * Protocol:
+ * 	- a set of rules two sides agree on to use when communicating
+ * 	- both the client and server are programmed to understand and use that
+ * 		particular set of rules. It's similar to two people from different
+ * 		countries agreeing on a language to speak in
+ * 	- ex: TCP/IP (Transmission Control Protocol/Internet Protocol) is the basic
+ * 				communication language or protocol of the Internet. It can also be used
+ * 				as a communications protocol in a private network (either an intranet
+ * 				or an extranet)
+ *
  * Primitive:
  * 	- a type of data that represents a single value
  * 	- like a number or a string. In other words, not an object
