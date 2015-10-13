@@ -237,6 +237,11 @@
  * 	- it's important to understand what is happening under the hood, so we don't
  * 		make decisions based on flawed assumptions
  *
+ * Template:
+ * 	- text designed to be the basis for final text or content after being processed
+ * 	- there's usually some specific template language, so the template system knows
+ * 		how to replace placeholders with real values
+ * 		
  * Template Literal:
  * 	- a way to concatenate strings in JavaScript (ES6)
  * 	- easier to work with than a bunch of strings concatenated with '+'
