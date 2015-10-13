@@ -143,6 +143,11 @@
  * 	- this is bad because it makes it easy for a typo to cause a bug, and
  * 		hard for tools to help us find it
  *
+ * Method Chaining:
+ * 	- a method returns an object so we can keep calling more methods
+ * 	- sometimes it returns the parent object (called 'cascading') and sometimes
+ * 		some other Object
+ *
  * Module:
  * 	- a reusable block of code whose existence does not accidentally impact
  * 		other code. JavaScript didn't have this before
