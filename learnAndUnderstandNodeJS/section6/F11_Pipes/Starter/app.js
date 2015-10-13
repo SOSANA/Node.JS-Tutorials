@@ -1,10 +1,15 @@
 var fs = require('fs');
+var zlib = require('zlib');
 
-var readable = fs.createReadStream(__dirname + '/greet.txt', { encoding: 'utf8', highWaterMark: 16 * 1024 });
-
+// creating a readable stream to connect to greet.txt
+var readable = fs.createReadStream(__dirname + '/greet.txt');
+// creating a writable stream to write to greetcopy.txt
 var writable = fs.createWriteStream(__dirname + '/greetcopy.txt');
-
-readable.on('data', function(chunk) {
-	console.log(chunk);
-	writable.write(chunk);
-});
+// creating a compressed stream to greet.txt.gz
+var compressed = fs.createWriteStream(__dirname + '/greet.txt.gz');
+// creating a gzip compressing stream
+var gzip = zlib.createGzip();
+// reading from greet.txt and than using pipe to write to greetcopy.txt
+readable.pipe(writable);
+// we are piping by chaining and writing the compressed data to a file
+readable.pipe(gzip).pipe(compressed);
