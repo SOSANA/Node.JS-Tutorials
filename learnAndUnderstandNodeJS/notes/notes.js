@@ -230,6 +230,11 @@
  * Scope:
  * 	- where in code you have access to particular variable or function
  *
+ * Serialize:
+ * 	- translating an object into a format that can be stored or transferred
+ * 	- 'Deserialize' is the opposite (converting the format back into an object)
+ * 	- ex: JSON, CSV, XML, and others are popular
+ *
  * Stream:
  * 	- a sequence of data made available over time
  * 	- pieces of data that eventually combine into a whole
