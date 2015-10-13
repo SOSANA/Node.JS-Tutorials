@@ -227,6 +227,10 @@
  * 	- very common and clean way to structure and protect code within modules
  * 	-	ref: section4/D11_ModulePatterns/Starter/greet5
  *
+ * Routing:
+ * 	- mapping HTTP requests to content
+ * 	- whether actual files that exist on the server, or not
+ *
  * Scope:
  * 	- where in code you have access to particular variable or function
  *
