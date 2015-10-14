@@ -247,6 +247,11 @@
  * 	- a type of data that represents a single value
  * 	- like a number or a string. In other words, not an object
  *
+ * REST:
+ * 	- an architectural style for building APIs
+ * 	- stands for 'Representational State Transfer'
+ * 	- we decide that HTTP verbs and URLs mean something
+ *
  * Revealing Module Pattern:
  * 	- exposing only the properties and methods you want via an returned object
  * 	- very common and clean way to structure and protect code within modules
