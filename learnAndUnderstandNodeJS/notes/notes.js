@@ -83,6 +83,11 @@
  * CommonJS Modules:
  * 	- an agreed upon standard for how code modules should be structured
  *
+ * Dependency:
+ * 	- code that another set of code depends on to function
+ * 	- if you use that code in your app, it is a dependency. Your app depends
+ * 		on it
+ *
  * ECMAScript:
  *  - the standard javascript is based on
  *  - needed a standard since there are many engines
@@ -197,6 +202,13 @@
  * 	- the simplest definition when talking about javascript
  * 	- ref: section4/D4_ObjectLiterals/
  *
+ * Package:
+ * 	- managed and maintained with a package management system
+ *
+ * package Management System:
+ * 	- software that automates installing and updating packages
+ * 	- deals with what version you have or need, and manages dependencies
+ *
  * Pipe:
  * 	- connecting two streams by writing to one stream what is being read
  * 		from another
@@ -265,4 +277,16 @@
  * 	- a way to concatenate strings in JavaScript (ES6)
  * 	- easier to work with than a bunch of strings concatenated with '+'
  * 	- ref: section5/E7_ES6TemplateStrings
+ *
+ * Versioning (Semantic Versioning):
+ * 	- specifying what version of a set of code this is so others can track if a new
+ * 		version has come out. This allows to watch for new features, or to watch for
+ * 		'breaking changes'
+ * 	- the word 'semantic' implies that something conveys meaning
+ * 	- Semantic Versioning contains 3 version numbers (v1.8.2)
+ * 			- major
+ * 			- minor
+ * 			- patch
+ * 	- ex: see slides semanticVersioning1/2/3
+ * 	- ref: semver.org
  */
