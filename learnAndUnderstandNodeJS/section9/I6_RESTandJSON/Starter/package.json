@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.10.6"
-  },
-  "devDependencies": {
-    "jasmine-node": "^1.14.5"
+    "body-parser": "^1.14.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
   }
 }

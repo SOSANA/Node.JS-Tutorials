@@ -7,11 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "moment": "^2.10.6"
-  },
-  "devDependencies": {
-    "jasmine-node": "^1.14.5"
-  }
+  "license": "ISC"
 }
