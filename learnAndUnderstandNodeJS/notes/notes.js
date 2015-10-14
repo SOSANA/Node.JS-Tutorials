@@ -97,6 +97,11 @@
  * 	- sometimes that endpoint (URL) does multiple things by making choices
  * 		based on the HTTP request headers
  *
+ * Environment Variables:
+ * 	- global variables specific to the environment (server) our code is living in
+ * 	- different servers can have different variable settings, and we can access
+ * 		those values in code
+ *
  * Error-First Callback:
  * 	- callbacks take an error object as their first parameter
  * 	- null if no error, otherwise will contain an object defining the error
@@ -138,6 +143,10 @@
  * 	- stands for 'HyperText Transfer Protocol'
  * 	- it's a format (of various) defining data being transferred via TCP/IP
  *
+ * HTTP Method:
+ * 	- specifies the type of action the request wishes to make
+ * 	- ex: GET, POST, DELETE, and others. Also called verbs
+ *
  * Inheritance:
  * 	- one object gets access to the properties and methods of another object
  *  - ref: section4/D5_PrototypalInheritance
@@ -167,6 +176,10 @@
  * 	- a method returns an object so we can keep calling more methods
  * 	- sometimes it returns the parent object (called 'cascading') and sometimes
  * 		some other Object
+ *
+ * Middleware:
+ * 	- code that sits between two layers of software
+ * 	- in the case of Express, sitting between the request and the response
  *
  * MIME Type:
  * 	- a standard for specifying the type of data being sent
@@ -250,6 +263,11 @@
  * 	- translating an object into a format that can be stored or transferred
  * 	- 'Deserialize' is the opposite (converting the format back into an object)
  * 	- ex: JSON, CSV, XML, and others are popular
+ *
+ * Static:
+ * 	- not dynamic
+ * 	- in other words, not processed by code in any way.
+ * 	- ex: HTML, CSS, and image files are 'static' files
  *
  * Stream:
  * 	- a sequence of data made available over time
