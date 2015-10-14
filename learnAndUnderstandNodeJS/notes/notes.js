@@ -284,9 +284,9 @@
  * 		'breaking changes'
  * 	- the word 'semantic' implies that something conveys meaning
  * 	- Semantic Versioning contains 3 version numbers (v1.8.2)
- * 			- major
- * 			- minor
- * 			- patch
+ * 			- major ex: 2.0.0 - big changes. Your code will break (maybe)
+ * 			- minor ex: 1.8.0 - some new features were added. Your code will work fine
+ * 			- patch ex: 1.7.3 - some bugs were fixed. Your code will work fine
  * 	- ex: see slides semanticVersioning1/2/3
  * 	- ref: semver.org
  */
