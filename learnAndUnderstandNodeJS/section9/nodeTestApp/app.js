@@ -1,5 +1,4 @@
 var express = require('express');
-var bodyParser = require('body-parser');
 var app = express();
 
 var apiController = require('./controllers/apiController');
@@ -7,10 +6,7 @@ var htmlController = require('./controllers/htmlController');
 
 var port = process.env.PORT || 3000;
 
-// create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
-// create application/json parser
-var jsonParser = bodyParser.json();
+
 
 app.use('/assets', express.static(__dirname + '/public'));
 
