@@ -210,6 +210,10 @@
  * 	- Doing other things without stopping your programming from running
  * 	- this is made possible by node's doing things asynchronously
  *
+ * NOSQL:
+ * 	- a variety of technologies that are alternatives to tables and sql
+ * 	- one of those types is a document database
+ * 	
  * Object:
  * 	- a collection of name/value pairs
  * 	- the simplest definition when talking about javascript
