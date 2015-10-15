@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/address');
+mongoose.connect('mongodb://localhost:27017/address');
 
 var Schema = mongoose.Schema;
 

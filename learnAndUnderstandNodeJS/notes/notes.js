@@ -273,6 +273,11 @@
  * 	- 'Deserialize' is the opposite (converting the format back into an object)
  * 	- ex: JSON, CSV, XML, and others are popular
  *
+ * Stack:
+ *  - the combination of all technologies used to build a piece of software
+ *  - your database system, your server side code, your client side code, and
+ *    everything else
+ * 
  * Static:
  * 	- not dynamic
  * 	- in other words, not processed by code in any way.
