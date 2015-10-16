@@ -7,8 +7,7 @@
  * create a file called index.js to load each module and export them as a group
  * or add a package.json file to the directory
  */
-// a module is exported that points to each file name
-module.exports = {
-  one: require('./one'),
-  two: require('./two')
-};
+var group = require('./group');
+
+group.one();
+group.two();
