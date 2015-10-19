@@ -21,9 +21,11 @@ function displayHelp() {
 
 function readFile(file) {
   console.log('Reading:', file);
+  // pipe out a file through the standard output stream
   require('fs').createReadStream(file).pipe(process.stdout);
 }
-
+// call a matching method from the arg parameter model, and slice the full listener
+// of arguments to effectively support passsing options from command-line flags
 if (process.argv.length > 0) {
   process.argv.forEach(function(arg, index) {
     if (args[arg]) {
