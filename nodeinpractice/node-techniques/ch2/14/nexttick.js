@@ -1,3 +1,12 @@
+/**
+ * Technique 14: 
+ * 	-
+ *
+ * Problem:
+ * 	-
+ * Solution:
+ * 	-
+ */
 var EventEmitter = require('events').EventEmitter;
 
 function complexOperations() {
@@ -13,4 +22,3 @@ function complexOperations() {
 complexOperations().on('success', function() {
   console.log('success!');
 });
-

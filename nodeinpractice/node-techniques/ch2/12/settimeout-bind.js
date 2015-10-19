@@ -1,3 +1,12 @@
+/**
+ * Technique 12: 
+ * 	-
+ *
+ * Problem:
+ * 	-
+ * Solution:
+ * 	-
+ */
 function Bomb() {
   this.message = 'Boom!';
 }

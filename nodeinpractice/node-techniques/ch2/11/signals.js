@@ -1,3 +1,12 @@
+/**
+ * Technique 11: 
+ * 	-
+ *
+ * Problem:
+ * 	-
+ * Solution:
+ * 	-
+ */
 process.stdin.resume(); //<co id="listing-globals-signals-1" />
 
 process.on('SIGHUP', function () { //<co id="listing-globals-signals-2" />

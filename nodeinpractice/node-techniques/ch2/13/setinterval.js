@@ -1,3 +1,12 @@
+/**
+ * Technique 13: 
+ * 	-
+ *
+ * Problem:
+ * 	-
+ * Solution:
+ * 	-
+ */
 function tick() {
   console.log('tick:', Date.now());
 }
