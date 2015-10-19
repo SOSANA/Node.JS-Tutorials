@@ -1,15 +1,15 @@
 /**
  * Technique 5: Reading and writing to standar I/O
  *
- * - getting data in and out of a program using the process objects
+ * 	- getting data in and out of a program using the process objects
  *
  * Problem:
- * - you want to pipe data to and from program
+ * 	- you want to pipe data to and from program
  * Solution:
- * - use process.stdout and process.stdin
+ * 	- use process.stdout and process.stdin
  *
  * Run with:
- * - cat file.txt | node process.js
+ * 	- cat file.txt | node process.js
  */
 // tell the stream we're ready to start reading
 process.stdin.resume();

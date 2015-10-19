@@ -2,27 +2,27 @@
  * Technique 6: Logging messages
  *
  * Problem:
- * - you want to log different types of messages to the console
+ * 	- you want to log different types of messages to the console
  * Solution:
- * - use console.log, console.info, console.error and console.warn. Be sure to
- *   take full advantage of the built-in formatting facilities provided by these
- *   methods
+ * 	- use console.log, console.info, console.error and console.warn. Be sure to
+ *   	take full advantage of the built-in formatting facilities provided by these
+ *    methods
  *
- * - console object has several methods tha tcan be used to output different types
- * 	 of messages.
- * - variables can be interpolated, or simply appended alongside string literals
+ * 	- console object has several methods tha tcan be used to output different types
+ * 	 	of messages.
+ *    - variables can be interpolated, or simply appended alongside string literals
  *
  * Formating placeholders:
- * - when message strings are formatted, util.format is used for supported formatting
- * 	 placeholders
- * - ex: place holder/ type/ Example
- *   		 %s/ String/ '%s','value'
- *       %d/Number/ '%d', 3.14
- *       %j/JSON/ '%j', { name: 'sosana'}
+ * 	- when message strings are formatted, util.format is used for supported formatting
+ * 	 	placeholders
+ *    - ex: place holder/ type/ Example
+ *   			 %s/ String/ '%s','value'
+ *        %d/Number/ '%d', 3.14
+ *          %j/JSON/ '%j', { name: 'sosana'}
  *
  * Interpolation:
- * - is a method of constructing new data points within the range of a discrete
- * 	 set of known data points
+ * 	- is a method of constructing new data points within the range of a discrete
+ * 		 set of known data points
  */
 var name = 'alex';
 var user = { name: 'alex' };
