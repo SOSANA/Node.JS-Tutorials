@@ -1,11 +1,16 @@
 /**
- * Technique 12: 
- * 	-
+ * Technique 12: Executing functions after a delay with setTimeout
+ * 	- its possible to run code once after a delay using node's setTimeout global
+ * 		method
  *
  * Problem:
- * 	-
+ * 	- you want to execute a funciton after a delay
  * Solution:
- * 	-
+ * 	- use 'setTimeout()', and use a function.prototype.bind if necessary
+ *
+ * 	- this seems simple and contrived, but this is used most commonly in tests
+ * 		were asynchronous API's are being tested and a small delay is neccessary to
+ * 		simulate real-world behavior
  */
 function Bomb() {
   this.message = 'Boom!';
@@ -16,5 +21,6 @@ Bomb.prototype.explode = function() {
 };
 
 var bomb = new Bomb();
-
-setTimeout(bomb.explode.bind(bomb), 1000); //<co id="callout-settimeout-2-1" />
+// call .bind to ensure the method is bound correctly
+// so it can access internal properties
+setTimeout(bomb.explode.bind(bomb), 1000);
