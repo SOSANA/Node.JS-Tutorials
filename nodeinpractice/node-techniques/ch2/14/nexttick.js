@@ -12,7 +12,7 @@
  * Solution:
  * 	- use 'process.nextTick()' to wrap the synchronous operation
  *
- * 	- 'process.nextTick()' method allows you to pace a callback at the head
+ * 	- 'process.nextTick()' method allows you to place a callback at the head
  * 		of the next cylce of the run loop. That means it's a way of slightly
  * 		delaying something, and as a result it's more effieent thant just using
  * 		'setTimeOut()' with a zero delay argument
