@@ -128,6 +128,15 @@
  * 			- put them in arrays and more
  * 	- ref: section4/D2_FirstClassFunctions
  *
+ * Formating placeholders:
+ * - when message strings are formatted, util.format is used for supported formatting
+ * 	 placeholders
+ * - ex: place holder/ type/ Example
+ *   		 %s/ String/ '%s','value'
+ *       %d/ Number/ '%d', 3.14
+ *       %j/ JSON/ '%j', { name: 'sosana'}
+ * - ref: nodeinpractice/node-techniques/ch2/6/console-1.js
+ *
  * Function constructors:
  * 	- a normal function that is used to construct objects
  * 	- the 'this' variable points a new empty object, and that object is returned
