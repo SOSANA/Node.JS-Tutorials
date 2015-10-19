@@ -299,6 +299,10 @@
  * Stream:
  * 	- a sequence of data made available over time
  * 	- pieces of data that eventually combine into a whole
+ * 	- standard streams come in three flavors: stdin,stdout, and stderr.
+ * 		- 0 is standard input, 1 is standard output, and 2 is standard error
+ * 		- running a program from the command prompt and adding 2> errors-file.log
+ * 			will send the error messages to errors-file.log
  * 	- ex: watching a video, we are streaming small amounts of the video at once
  *
  * Synchronous:
