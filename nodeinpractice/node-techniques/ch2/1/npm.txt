@@ -1,3 +1,5 @@
+Technique 1: Installing and loading modules
+
 $ npm search express //<co id="callout-globals-npm-1" />
 express               Sinatra inspired web development framework
 $ npm install express
