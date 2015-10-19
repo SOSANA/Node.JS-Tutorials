@@ -12,6 +12,14 @@
  * 	 of messages.
  * - variables can be interpolated, or simply appended alongside string literals
  *
+ * Formating placeholders:
+ * - when message strings are formatted, util.format is used for supported formatting
+ * 	 placeholders
+ * - ex: place holder/ type/ Example
+ *   		 %s/ String/ '%s','value'
+ *       %d/Number/ '%d', 3.14
+ *       %j/JSON/ '%j', { name: 'sosana'}
+ *
  * Interpolation:
  * - is a method of constructing new data points within the range of a discrete
  * 	 set of known data points
