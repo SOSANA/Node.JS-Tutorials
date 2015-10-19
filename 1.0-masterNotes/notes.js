@@ -151,6 +151,10 @@
  * 	- one object gets access to the properties and methods of another object
  *  - ref: section4/D5_PrototypalInheritance
  *
+ * interpolation:
+ * 	- is a method of constructing new data points within the range of a discrete
+ *    set of known data points
+ *
  * Invoke:
  * 	- run the function
  * 	- we can also say 'call' the function
@@ -213,7 +217,7 @@
  * NOSQL:
  * 	- a variety of technologies that are alternatives to tables and sql
  * 	- one of those types is a document database
- * 	
+ *
  * Object:
  * 	- a collection of name/value pairs
  * 	- the simplest definition when talking about javascript
@@ -277,7 +281,7 @@
  *  - the combination of all technologies used to build a piece of software
  *  - your database system, your server side code, your client side code, and
  *    everything else
- * 
+ *
  * Static:
  * 	- not dynamic
  * 	- in other words, not processed by code in any way.
