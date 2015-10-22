@@ -1,13 +1,12 @@
 /**
- * Technique X:
- * 	-
+ * Technique 17: Using buffers to convert raw data
+ * 	- using the binary data to convert a common file format into JSON
  *
  * Problem:
- * 	-
+ * 	- You want to convert a binary file into a more usable format
  * Solution:
- * 	-
- *
- * 	-
+ * 	- the node API extends JavaScript with a buffer class, exposing an API for
+ * 		raw binary data access and tools for dealing more easily with binary data
  */
 var fs = require('fs');
 
