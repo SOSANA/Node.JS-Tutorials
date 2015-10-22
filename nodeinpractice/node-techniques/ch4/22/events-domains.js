@@ -1,16 +1,25 @@
 /**
- * Technique X:
- * 	-
+ * Technique 22: Managing errors with domains
+ * 	- dealing with errors from multiple instances of EventEmitter can feel like
+ * 		hard work, unless domains are used
  *
  * Problem:
- * 	-
+ * 	- your dealing with multiple non-blocking APIs, but are struggling to
+ * 		effectively handle errors
  * Solution:
- * 	-
+ * 	- node's domain module can be used to centralize error handling for a set of
+ * 		asynchronous operations, and this includes EventEmitter instances that emit
+ * 		unhandled error events
  *
- * 	-
+ * 	- node's domain API provides a way of wrapping existing non-blocking APIs and
+ * 		exceptions with error handlers. This helps centralize error handling and is
+ * 		particularly useful in cases where multiple interpdependent I/O operations
+ * 		are being used
  */
 var util = require('util');
-var domain = require('domain'); //<co id="callout-events-domains-1" />
+// the domain module must be loaded, and then suitable instance created
+// with the create method
+var domain = require('domain');
 var events = require('events');
 var audioDomain = domain.create();
 
@@ -30,8 +39,8 @@ function MusicPlayer() {
 
   this.audioDevice = new AudioDevice();
   this.on('play', this.play.bind(this));
-
-  this.emit('error', 'No audio tracks are available'); //<co id="callout-events-domains-2" />
+  // this error and any other errors will be caught by the same error handler
+  this.emit('error', 'No audio tracks are available');
 }
 
 util.inherits(MusicPlayer, events.EventEmitter);
@@ -44,8 +53,8 @@ MusicPlayer.prototype.play = function() {
 audioDomain.on('error', function(err) {
   console.log('audioDomain error:', err);
 });
-
-audioDomain.run(function() { //<co id="callout-events-domains-3" />
+// any code that raises errors inside this callback will be covered by the domain
+audioDomain.run(function() {
   var musicPlayer = new MusicPlayer();
   musicPlayer.play();
 });
