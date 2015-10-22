@@ -1,4 +1,4 @@
-function play(track) { //<co id="callout-events-inherit-3-1" />
+function play(track) { 
   this.playing = true;
 });
 

@@ -18,7 +18,7 @@ musicPlayer.on('stop', function() {
   this.playing = false;
 });
 
-musicPlayer.on('play', function(track) { //<co id="callout-events-inherit-2-1" />
+musicPlayer.on('play', function(track) { 
   console.log('Track now playing:', track);
 });
 
