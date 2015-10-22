@@ -40,7 +40,15 @@
  * Buffer:
  * 	- a temporary holding spot for data being moved from one place to another
  * 	- intentionally limited in size
- * 	- ex: think of watching a video "its buffering"
+ * 	- buffer API provides encoding such as ASCII, UTF-8, utf16le, base64, and hex
+ * 	- by default buffer converts data using octets (using hex notation)
+ * 	- provides a method called 'toString' to convert our data into a UTF-8
+ * 		encoding string
+ *  - if data is only comprised of text characters we can get a performance
+ *  	benefit  y changing the encoding to ASCII rather than UTF-8.
+ * 	- ex:
+ * 			- think of when you are watching a video "its buffering"
+ * 			- Node.JS-Tutorials/nodeinpractice/node-techniques/ch3
  *
  * BYTE:
  * 	- 8 bits
@@ -295,6 +303,7 @@
  * 	- not dynamic
  * 	- in other words, not processed by code in any way.
  * 	- ex: HTML, CSS, and image files are 'static' files
+ *
  *
  * Stream:
  * 	- a sequence of data made available over time
