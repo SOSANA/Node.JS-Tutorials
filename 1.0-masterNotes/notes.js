@@ -312,6 +312,16 @@
  * 		- 0 is standard input, 1 is standard output, and 2 is standard error
  * 		- running a program from the command prompt and adding 2> errors-file.log
  * 			will send the error messages to errors-file.log
+ * 	- Types of streams:
+ * 		- Built-in: many of Node's core modules implement streaming interfaces
+ * 			- ex: fs.createReadStream()
+ * 		- HTTP: although technically network streams, ther eare streaaming modules
+ * 						designed to work with various web technologies
+ * 		- Parsers: historically parsers have been implemented using streams
+ * 			- ex: popular third-party modules for NOde include XML and JSON parsers
+ * 		- Browser: node's event-based streams have been extended to work in
+ * 							 browsers, offering some unique opportunites for interfacing
+ * 							 with client-side code
  * 	- ex: watching a video, we are streaming small amounts of the video at once
  *
  * Synchronous:
