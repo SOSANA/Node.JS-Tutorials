@@ -4,8 +4,9 @@ var client = redis.createClient();
 client.on('error', function(err) {
   console.error('Error:', err);
 });
-
-client.on('monitor', function(timestamp, args) { //<co id="callout-events-detect-2-1" />
+// the monitor event emitted by the redis module for tracking various internal
+// activities occur
+client.on('monitor', function(timestamp, args) { 
   console.log('Time:', timestamp, 'arguments:', args);
 });
 
