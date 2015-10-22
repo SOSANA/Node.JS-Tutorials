@@ -1,3 +1,11 @@
 /**
- * add notes here
+ * Technique X:
+ * 	-
+ *
+ * Problem:
+ * 	-
+ * Solution:
+ * 	-
+ *
+ * 	-
  */
