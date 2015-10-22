@@ -304,7 +304,6 @@
  * 	- in other words, not processed by code in any way.
  * 	- ex: HTML, CSS, and image files are 'static' files
  *
- *
  * Stream:
  * 	- a sequence of data made available over time
  * 	- pieces of data that eventually combine into a whole
