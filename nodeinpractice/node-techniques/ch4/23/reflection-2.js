@@ -30,6 +30,6 @@ Pulsar.prototype.start = function() {
 
 var pulsar = new Pulsar(500, 5);
 
-pulsar.on('pulse', function() { //<co id="callout-events-reflection-2-1" />
+pulsar.on('pulse', function() { 
   console.log('.');
 });
