@@ -280,6 +280,14 @@
  * 	- a type of data that represents a single value
  * 	- like a number or a string. In other words, not an object
  *
+ * Recursion:
+ * 	- calling a function on itself
+ * 	- is a technique for iterating over an operation by having a function call
+ * 		itself repeatedly until it arrives at a result. Most loops can be rewritten
+ * 		in a recursive style, and in some functional languages this approach to
+ * 		looping is the default.
+ * 	- ref: http://www.sitepoint.com/recursion-functional-javascript/
+ *
  * REST:
  * 	- an architectural style for building APIs
  * 	- stands for 'Representational State Transfer'
