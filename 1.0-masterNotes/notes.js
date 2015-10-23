@@ -163,6 +163,11 @@
  * 	- are possible in javascript because functions are First-Class.
  * 	- ref: section4/D2_FirstClassFunctions
  *
+ * Heap:
+ * 	- a region of your computer's memory that is not managed automatically for
+ * 		you, and is not as tightly managed by the CPU. It is a more free-floating
+ * 		region of memory (and is larger)
+ *
  * HTTP:
  * 	- a set of rules (and a format) for data being transferred on the web
  * 	- stands for 'HyperText Transfer Protocol'
