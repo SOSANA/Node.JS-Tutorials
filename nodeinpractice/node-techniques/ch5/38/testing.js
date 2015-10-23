@@ -8,16 +8,16 @@ var actual = [];
 fs.createReadStream(__dirname + '/sample.csv')
   .pipe(parser);
 
-process.on('exit', function() { //<co id="callout-streams-testing-1" />
-  actual.push(parser.read()); //<co id="callout-streams-testing-2" />
+process.on('exit', function() {
+  actual.push(parser.read());
   actual.push(parser.read());
   actual.push(parser.read());
 
-  var expected = [ //<co id="callout-streams-testing-3" />
+  var expected = [
     { name: 'Alex', location: 'UK', role: 'admin' },
     { name: 'Sam', location: 'France', role: 'user' },
     { name: 'John', location: 'Canada', role: 'user' }
   ];
 
-  assert.deepEqual(expected, actual); //<co id="callout-streams-testing-4" />
+  assert.deepEqual(expected, actual); 
 });

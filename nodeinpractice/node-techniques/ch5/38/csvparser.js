@@ -1,21 +1,26 @@
 /**
- * Technique 34: Parsing data with transform streams
- * 	- streams have long been used as a way to create efficient parsers. The
- * 		stream.Transform base classs can be used to do this in Node
+ * Technique 38: Testing streams
+ * 	- just like anything else you write, its strongly recommended that you test
+ * 		your streams. This technique explains how to use nodes built-in 'assert'
+ * 		module to test a class that inherits from stream.Readable
  *
  * Problem:
- * 	- you want to use streams to change data into another format in a memory
- * 		efficient manner
+ * 	- you've written your own stream class and you want to write a unit test
+ * 		for it
  * Solution:
- * 	- inherit from stream.Transform and implement the _transform method
+ * 	- use some suitable sample data to drive your stream class, and then call
+ * 		read() or write() to gather results and compare them to the expected
+ * 		output
  *
- * 	- transform streams can also sit in the middle of a pipe chain. The
- * 		difference between duplex and transfor streams is that they're expected
- * 		to transform data, and the're implemented by writing a _transform method.
- * 		this method's signature is similar to _write, it takes three aruguments:
- * 		'chunk', 'encoding', and 'callback'. The callback should be executed
- * 		when the data has been transformed, which allows transform streams to
- * 		parse data asynchronously
+ * 	- the common pattern for testing streams, used in nodes sources itself and
+ * 		by many open source developers, is to drive the stream being tested using
+ * 		sample data and then compare the end results against expected values.
+ * 	- the most difficult par tof this can be comin gup with a suitable data to
+ * 		test. Sometimes its easy to create a text file, or a fixture in testing
+ * 		nomenclature, that can be used to drive the stream by piping it. If your
+ * 		testing a network-oriented stream, then you shoul dconsider using nodes
+ * 		net or http modules to create "mock" servers that generat esuitable test
+ * 		data
  */
 var stream = require('stream');
 
