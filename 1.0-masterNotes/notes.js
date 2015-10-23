@@ -26,6 +26,12 @@
  * 	- more than one process running simultaneously
  * 	- node does things asynchronously. V8 does not
  *
+ * Backpressure:
+ * 	- if the client is on a slow connection, the network stream will signal this
+ * 		by requesting that the I/O source pauses until the client is ready for more
+ * 		data.
+ * 	- instead of reading the entire file into memory, the buffer is read in chunks
+ *
  * Binary Data:
  * 	- data stored in binary (sets of 1s and 0s)
  * 	- the core of the math that computers are based on
