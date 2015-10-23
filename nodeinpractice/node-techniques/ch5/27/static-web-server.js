@@ -1,6 +1,6 @@
 /**
  * Technique X:
- * 	-
+ * 	- 
  *
  * Problem:
  * 	-
