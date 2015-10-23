@@ -11,6 +11,8 @@
  * Abstract (Base) Class:
  * 	- a type of constructor you never work directly with, but inherit from
  * 	- we create new custom objects which inherit from the abstract base class
+ * 	- methods that you must implement before they can be used.
+ * 	- this is usually done through inheritance.
  *
  * API:
  * 	- a set of tools for building a software application
