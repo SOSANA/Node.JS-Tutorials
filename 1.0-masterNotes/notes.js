@@ -361,6 +361,19 @@
  * 	- easier to work with than a bunch of strings concatenated with '+'
  * 	- ref: section5/E7_ES6TemplateStrings
  *
+ * TTY:
+ * 	- The TTY is the terminal or command prompt itself.
+ * 	- tty is one of those funky Unix commands that prints (or, displays) to standard
+ * 		output the name of the terminal connected to standard input.
+ * 	- These are commonly used as a way to get access to the computer to fix things,
+ * 		without actually logging into a possibly b0rked desktop.
+ * 			- Related: What is tty7 in the commandline?
+ * 				- By default Ubuntu has 7 tty's.
+ * 			 	- 1-6 are command line only, 7 runs your X session (your normal desktop).
+ * 			  - To access them, use this keyboard shortcut: Ctrl + Alt + F1
+ * 			  - (changing F1 to F1-F6 to access the terminal that you need)
+ * 			  - To get back to your X session (the normal desktop), Ctrl + Alt + F7
+ *
  * Versioning (Semantic Versioning):
  * 	- specifying what version of a set of code this is so others can track if a new
  * 		version has come out. This allows to watch for new features, or to watch for
