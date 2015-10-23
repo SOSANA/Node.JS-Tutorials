@@ -1,5 +1,5 @@
 /**
- * Technique 35: OPtimizing streams
+ * Technique 35: Optimizing streams
  * 	- built-in streams and the classes used to build custom streams allow
  * 		the internal buffer size to be configured. It's useful to know how
  * 		to optimize this value to attain the desired performance characteristics
@@ -16,7 +16,6 @@
  * 		'bufferSize' property. This option is passed to stream.Readable so it'll
  * 		control the internal buffer used to temporarily store file data before
  * 		it's used elsewhere
- *
  */
 var fs = require('fs');
 var zlib = require('zlib');
