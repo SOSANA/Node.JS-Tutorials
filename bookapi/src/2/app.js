@@ -2,9 +2,7 @@ var express = require('express'),
     mongoose = require('mongoose');
 
 
-var db = mongoose.connect('mongodb://localhost/bookAPI', function () {
-  console.log('logged in!!!');
-});
+var db = mongoose.connect('mongodb://localhost/bookAPI');
 
 var Book = require('./models/bookModel');
 
