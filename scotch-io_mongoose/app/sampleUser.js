@@ -16,6 +16,11 @@ newUser.save(function(err) {
   console.log('User created!');
 });
 
+
+/**
+ * query methods
+ */
+
 // 'find all' (get all the users)
 User.find({}, function(err, users) {
   if (err) throw err;
@@ -40,6 +45,11 @@ User.findById(1, function (err, user) {
   console.log(user);
 });
 
+
+/**
+ * Update methods
+ */
+
 // 'update' (get a user with ID of 1)
 // Remember that since we created the function to change the updated_at date,
 // this will also happen on save.
@@ -57,20 +67,55 @@ User.findById(1, function(err, user) {
   });
 });
 
-// 'find and update' (get a user with ID of 1)
-User.findById(1, function(err, user) {
+// 'find and update' (find the user starlord55 and update him to starlord 88)
+User.findOneAndUpdate({ username: 'starlord55'}, { username: 'starlord88'}, function(err, user) {
   if (err) throw err;
 
-  // change the users location
-  user.location = 'uk';
+  // we have the updated user returned to us
+  console.log(user);
+});
 
-  // save the user
-  user.save(function(err) {
+// 'find by id and update' (find the user with id 4 and update username to starlord 88)
+User.findByIdAndUpdate(4, { username: 'starlord88'}, function(err, user) {
+  if (err) throw err;
+
+  // we have the updated user returned to us
+  console.log(user);
+});
+
+
+/**
+ * Delete methods
+ */
+
+// 'Get a User, Then Remove' (get a user starlord55 and then remove)
+User.find({ username: 'starlord55'}, function(err, user) {
+  if (err) throw err;
+
+  // delete user
+  user.remove(function (err) {
     if (err) throw err;
 
-    console.log('User successfully updated!');
+    console.log('user successfully deleted!');
   });
 });
+
+// 'Find and Remove' (find the user with id 4 and then remove)
+User.findOneAndRemove({ username: 'starlord55'}, function(err, user) {
+  if (err) throw err;
+
+  // we have deleted the user
+  console.log('User deleted!');
+});
+
+// 'Find By ID and Remove' (find the user with id 4 and then remove)
+User.findOneAndRemove(4, function(err, user) {
+  if (err) throw err;
+
+  // we have deleted the user
+  console.log('User deleted!');
+});
+
 
 // you can also use mongoDB query syntax
 var monthAgo = new Date();
