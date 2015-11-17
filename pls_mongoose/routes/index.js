@@ -7,7 +7,6 @@ router.get('/', function(req, res) {
     res.render('index', { title: 'Express' });
 });
 
-
 /* GET New Note page. */
 router.get('/newnote', function(req, res) {
     return standupCtrl.getNote(req, res);
