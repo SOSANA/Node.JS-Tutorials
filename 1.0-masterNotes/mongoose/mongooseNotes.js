@@ -29,4 +29,34 @@
  * 	- $lte: less than or equal to
  * 	- $ne: not eual to
  * 	- $nin: does not exist
+ *
+ * rawResponse:
+ * 	- is the full response from Mongo
+ *  - Ref: see model.update.js in /1.0-masterNotes
+ *
+ * numberAffected:
+ * 	- is the number of documents affected by update
+ * 	- Ref: see model.update.js in /1.0-masterNotes
+ *
+ * Model.update(condtion, update, [options], [callback]):
+ * 	- list of 'options' for update method
+ * 		  	Option    |             Description                    | Default Value
+ * 		  	----------------------------------------------------------------------
+ * 				safe      | Safe mode - default to value set in schema | true
+ * 				upsert    | create the document if it does not match   | false
+ * 				multi     | determines if multiple documents should    | false
+ * 										be updated                                 |
+ * 				strict    | override the strict option for this update |
+ * 				overwrite | disables the update-only mode to allow     | False
+ * 									|	for overwrite of document                  |
+ *
+ * Model.findByIdAndUpdate(id, update, [options], [callback]):
+ * 	- list of 'options' for findByIdAndUpdate method
+ * 		  	Option    |             Description                    | Default Value
+ * 		  	----------------------------------------------------------------------
+ * 				new       | set to true to return the modified document| true
+ * 								 	| rather than the original                   |
+ * 				upsert    | create the document if it does not match   | false
+ * 				select    | specify the document fields to return      |
+ *
  */
