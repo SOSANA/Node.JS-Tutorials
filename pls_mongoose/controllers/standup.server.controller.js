@@ -37,12 +37,18 @@ exports.create = function (req, res) {
     workToday: req.body.workToday,
     impediment: req.body.impediment
   });
-
-  // saving entry, normally pass a callback for errors
-  entry.save();
-
-  // redirect to home page...
-  res.redirect(301, '/');
+  // save the entry
+  entry.save(function (err) {
+      if (err) {
+          var errMsg = 'Sorry, there was an error saving the stand-up meeting note. ' + err;
+          res.render('newnote', { title: 'Standup - New Note (error)', message: errMsg });
+      }
+      else {
+          console.log('Stand-up meeting note was saved!');
+          // Redirect to the home page to display list of notes...
+          res.redirect(301, '/');
+      }
+  });
 };
 
 // creating a method called 'getNote'
