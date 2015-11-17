@@ -20,4 +20,13 @@
  *
  * EX: for detailed notes on querying, updating, saving, creating, etc
  * 	ref: https://github.com/SOSANA/Node.JS-Tutorials/tree/master/scotch-io_mongoose
+ *
+ * Comparison Query Operators
+ * 	- $gt: greater than
+ * 	- $gte: greater than or equals to
+ * 	- $in: exists in
+ * 	- $lt: less than
+ * 	- $lte: less than or equal to
+ * 	- $ne: not eual to
+ * 	- $nin: does not exist
  */
