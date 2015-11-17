@@ -17,3 +17,8 @@ Standup.find(function (err, results) {
 Standup.find({ memberName: 'David' }, function (err, results) {
   // handle the error, or results here
 });
+
+// limit the returned fields
+Standup.find({ memberName: 'Mary'}, 'memberName impediment', function (err, results) {
+  // handle the error, or results here
+});
