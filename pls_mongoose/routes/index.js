@@ -4,7 +4,12 @@ var standupCtrl = require('../controllers/standup.server.controller');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-    res.render('index', { title: 'Express' });
+    return standupCtrl.list(req, res);
+});
+
+/* POST filter by member name - home page. */
+router.post('/', function(req, res) {
+    return standupCtrl.filterByMember(req, res);
 });
 
 /* GET New Note page. */
