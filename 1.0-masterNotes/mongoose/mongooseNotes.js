@@ -59,4 +59,16 @@
  * 				upsert    | create the document if it does not match   | false
  * 				select    | specify the document fields to return      |
  *
+ * MVC Pattern:
+ * 	- This lays out the beginning of a design pattern called MVC—model, view,
+ * 	controller. The basic idea is that you encapsulate separate concerns in
+ * 	different objects: the model code knows about the database, storage, and
+ * 	querying; the controller code knows about routing and requests/responses;
+ * 	and the view code knows what to render for users.
+ *
+ * Validator:
+ * 	- a mongoose middleware that makes sure that our data is correct, using
+ * 	validator based on length, URL, int, upper case, etc
+ * 	- ***don't forget to validate all user input!!!***
+ * 	- ref: expressjs-train/expressjs-blueprints/ch1
  */
