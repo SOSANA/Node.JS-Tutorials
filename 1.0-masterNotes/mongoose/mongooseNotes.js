@@ -66,9 +66,18 @@
  * 	querying; the controller code knows about routing and requests/responses;
  * 	and the view code knows what to render for users.
  *
- * Validator:
- * 	- a mongoose middleware that makes sure that our data is correct, using
- * 	validator based on length, URL, int, upper case, etc
- * 	- ***don't forget to validate all user input!!!***
- * 	- ref: expressjs-train/expressjs-blueprints/ch1
+ * Middleware:
+ *
+ * 	Validator:
+ * 		- a mongoose middleware that makes sure that our data is correct, using
+ * 	 		validator based on length, URL, int, upper case, etc
+ * 	  - ***don't forget to validate all user input!!!***
+ * 	  - ref: expressjs-train/expressjs-blueprints/ch1
+ *
+ * 	Passport-local:
+ * 		- authentication middleware that can be used with express applications
+ * 		- handles user authentication and centralizes all authentication logic and
+ * 			provides convenient ways to authenticate locally in addition to third
+ * 			parties, such as Twitter, Google, Github, etc
+ * 		- ref: expressjs-train/expressjs-blueprints/ch1
  */
