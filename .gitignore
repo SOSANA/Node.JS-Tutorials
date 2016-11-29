@@ -16,6 +16,7 @@
 .settings
 main.js
 .c9
-
+yarn.lock
+npm-debug.log
 *.module-cache*
 node_modules
