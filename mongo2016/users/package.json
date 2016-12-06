@@ -6,9 +6,10 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon index.js",
     "clean": "rimraf node_modules",
-    "test": "cross-env NODE_ENV=test BABEL_ENV=test mocha --compilers js:babel-core/register",
+    "test": "mocha --compilers js:babel-core/register",
+    "test:set": "cross-env NODE_ENV=test BABEL_ENV=test mocha --compilers js:babel-core/register",
     "test:test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "cross-env NODE_ENV=test BABEL_ENV=test npm run test -- --watch"
+    "test:watch": "npm run test -- --watch"
   },
   "author": "sosana",
   "license": "ISC",
