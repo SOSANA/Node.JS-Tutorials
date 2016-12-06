@@ -1,4 +1,7 @@
 /**
+ * assert:
+ *  - compares one value to another
+ *  
  * Sinon:
  *  - Sinon helps eliminate complexity in tests by allowing you to easily create
  *    so called test-double.
