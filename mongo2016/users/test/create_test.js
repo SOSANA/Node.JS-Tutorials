@@ -1,5 +1,5 @@
 /**
- * purpose of this test is to make sure it correctly saves to the db
+ * - purpose of this test is to make sure it correctly saves to the db
  */
 
 import assert from 'assert';
