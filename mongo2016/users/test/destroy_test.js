@@ -1,5 +1,5 @@
 /**
- * - purpose of this test is to make sure we can delete a record form the db
+ * - purpose of this test is to make sure we can delete a record from the db
  *  - four different ways to delete/destroy/remove a record
  *    - User.remove(), User.findOneAndRemove(), User.findByIdAndRemove(), and
  *      model instance remove joe.remove()
