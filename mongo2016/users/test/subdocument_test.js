@@ -1,5 +1,6 @@
 /**
- * - purpose of this test is to make sure we can validate record(s) from the db
+ * - purpose of this test is to make sure we can add subdocuments to our
+ *   record(s) from the db
  */
 
  import assert from 'assert';
