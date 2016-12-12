@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import PostSchema from './post';
 
 const Schema = mongoose.Schema;
 
@@ -11,7 +12,8 @@ const UserSchema = new Schema({
     },
     required: [true, 'Name is required.']
   },
-  postCount: Number
+  postCount: Number,
+  posts: [PostSchema]
 });
 
 const User = mongoose.model('user', UserSchema);
