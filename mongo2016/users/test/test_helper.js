@@ -13,16 +13,23 @@ before((done) => {
       done();
     })
     .on('error', (error) => {
-      console.warn('Error', error);
+      console.warn('Error', error); // eslint-disable-line
     });
 });
 
 // a hook is a function that will be executed before any test gets executed
 // inside the test suite. You need to pass done callback
 beforeEach((done) => {
-  // take all the records inside the users collections and get rid of them
-  mongoose.connection.collections.users.drop(() => {
-    // ready to run the next test! sends a signal to mocha that its done
-    done();
+  const { users, comments, blogposts } = mongoose.connection.collections; // eslint-disable-line
+  users.drop(() => {
+    blogposts.drop(() => {
+      done();
+    });
   });
+
+  // take all the records inside the users collections and get rid of them
+  // mongoose.connection.collections.users.drop(() => {
+    // ready to run the next test! sends a signal to mocha that its done
+  //  done();
+  // });
 });
