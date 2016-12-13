@@ -1,7 +1,7 @@
 /**
  * assert:
  *  - compares one value to another
- *  
+ *
  * Sinon:
  *  - Sinon helps eliminate complexity in tests by allowing you to easily create
  *    so called test-double.
@@ -19,4 +19,9 @@
  *       return a specific value, etc
  *    Mocks:
  *     - which make replacing whole objects easier by combining both spies and stubs
+ *
+ * Mocha:
+ *  - xit: having 'x' before 'it' causes mocha to ignore test
+ *  - it.only: having '.only' causes mocha to ignore rest of test suite and only runs
+ *    this test
  */
