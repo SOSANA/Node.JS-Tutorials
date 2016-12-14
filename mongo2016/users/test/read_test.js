@@ -13,13 +13,16 @@ import assert from 'assert';
 import User from '../src/user';
 
 describe('Reading users out of the database', () => {
-  // defining joe
-  let joe;
+  let alex, betty, chris, joe;
 
   // making sure we have a user in our collection
   beforeEach((done) => {
+    alex = new User({ name: 'Alex' });
+    betty = new User({ name: 'Betty' });
+    chris = new User({ name: 'Chris' });
     joe = new User({ name: 'Joe' });
-    joe.save()
+
+    Promise.all([alex.save(), betty.save(), chris.save(), joe.save()])
       .then(() => done());
   });
 
@@ -41,5 +44,19 @@ describe('Reading users out of the database', () => {
         assert(user.name === 'Joe');
         done();
       });
+  });
+
+  it('can skip and limit the result set', (done) => {
+    User.find({})
+    .sort({ name: 1 }) // sort all users by name property in ascending ( A to Z)
+    .skip(1) // skip first record
+    .limit(2) // limit results to 2
+    .then((users) => {
+      console.log(users); // eslint-disable-line
+      assert(users.length === 2); // assert limit is 2
+      assert(users[0].name === 'Betty'); // assert we always get same results first
+      assert(users[1].name === 'Chris'); // assert we always get same results second
+      done();
+    });
   });
 });
