@@ -18,7 +18,7 @@ describe('Assocations', () => {
 
     joe.blogPosts.push(blogPost);
     blogPost.comments.push(comment);
-    comment.user = joe; // mongoose has a setter behind the scenes
+    comment.user = joe; // mongoose has a setter behind the scenes this assoc. joe with comment
 
     // by using Promise.all we can avoid the guess work on using then()/catch()
     // joe.save();
