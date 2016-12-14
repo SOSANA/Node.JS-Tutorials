@@ -1,12 +1,5 @@
 /**
- * - purpose of this test is to make sure it queries db
- * Find Records
- *  - find a user with a name of 'joe'
- *    - ex: User.findOne(criteria)
- *      - find the first user that matches the criteria. Returns a single record
- *  - find a particular user with this given id
- *    - ex: User.find(criteria)
- *      - find all users that match the given criteria. Returns an array
+ * - purpose of this test is to make sure it queries db correctly
  */
 
 import assert from 'assert';
