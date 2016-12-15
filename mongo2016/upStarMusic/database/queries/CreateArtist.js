@@ -7,6 +7,12 @@ import Artist from '../models/artist';
  */
 
 export default (artistProps) => {
+  // console.log(artistProps);
+  // if you only want to pass certain props from server other pass in everything below
+  // const { name, age, yearsActive, genre } = artistProps;
+  // const artist = new Artist({ name, age, yearsActive, genre });
 
+  const artist = new Artist(artistProps);
 
+  return artist.save();
 };
