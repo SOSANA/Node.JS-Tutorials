@@ -8,5 +8,7 @@ import Artist from '../models/artist';
  */
 
 export default (_id, artistProps) => {
-
+  // console.log(_id, artistProps);
+  // return Artist.findByIdAndUpdate({ _id }, artistProps); // another possible solution
+  return Artist.update({ _id }, artistProps); // another possible solution
 };
