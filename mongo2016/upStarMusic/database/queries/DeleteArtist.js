@@ -7,5 +7,7 @@ import Artist from '../models/artist';
  */
 
 export default (_id) => {
-
+  // console.log(`Removed id: ${_id}`);
+  // return Artist.remove({ _id }); // another possible solution
+  return Artist.findByIdAndRemove({ _id });
 };
