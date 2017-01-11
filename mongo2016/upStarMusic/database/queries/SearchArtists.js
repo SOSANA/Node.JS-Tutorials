@@ -10,14 +10,32 @@ import Artist from '../models/artist';
  */
 
 export default (criteria, sortProperty, offset = 0, limit = 20) => {
-  // es5
-  // const sortOrder = {};
-  // sortOrder[sortProperty] = 1;
-  // Artist.find({})
-  //   .sort(sortOrder);
+  const buildQuery = () => {
+    // console.log(criteria);
+    const query = {};
 
-  // es6
-  const query = Artist.find({})
+    if (criteria.name) {
+      query.$text = { $search: criteria.name }; // have to add index property on name
+    }
+
+    if (criteria.age) {
+      query.age = {
+        $gte: criteria.age.min,
+        $lte: criteria.age.max
+      };
+    }
+
+    if (criteria.yearsActive) {
+      query.yearsActive = {
+        $gte: criteria.yearsActive.min,
+        $lte: criteria.yearsActive.max
+      };
+    }
+
+    return query;
+  };
+
+  const query = Artist.find(buildQuery(criteria))
     .sort({ [sortProperty]: 1 })
     .skip(offset)
     .limit(limit);
