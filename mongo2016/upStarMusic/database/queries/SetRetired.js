@@ -7,5 +7,9 @@ import Artist from '../models/artist';
  */
 
 export default (_ids) => {
-
+  return Artist.update(
+    { _id: { $in: _ids } },
+    { retired: true },
+    { multi: true } // check doc's, required for multiple boolean updates
+  );
 };
