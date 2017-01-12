@@ -6,5 +6,9 @@ import Artist from '../models/artist';
  * @return {promise} A promise that resolves after the update
  */
 export default (_ids) => {
-
+  return Artist.update(
+    { _id: { $in: _ids } },
+    { retired: false },
+    { multi: true } // check doc's, required for multiple boolean updates
+  );
 };
