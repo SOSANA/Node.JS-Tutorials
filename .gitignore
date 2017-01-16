@@ -1,0 +1,8 @@
+node_modules/
+settings.json
+dev-settings.json
+.idea
+npm-debug.log
+scripts/
+config/
+yarn.lock
