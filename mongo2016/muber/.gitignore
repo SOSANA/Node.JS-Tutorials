@@ -5,4 +5,3 @@ dev-settings.json
 npm-debug.log
 scripts/
 config/
-yarn.lock
