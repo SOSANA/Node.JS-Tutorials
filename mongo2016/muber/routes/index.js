@@ -1,6 +1,3 @@
-import DriversController from '../controllers';
+import DriversRoute from './driversRoute';
 
-export default (app) => {
-  app.get('/api', DriversController.greeting);
-  app.post('/api/drivers', DriversController.create);
-};
+export default DriversRoute;
