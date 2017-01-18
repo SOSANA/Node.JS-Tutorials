@@ -6,7 +6,10 @@ import routes from './routes';
 const app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/muber');
+
+if (process.env.NODE_ENV === 'development') {
+  mongoose.connect('mongodb://localhost/muber');
+}
 
 app.use(bodyParser.json());
 
