@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon index.js",
-    "test": "mocha --recursive ./test/ --compilers js:babel-core/register",
-    "test:set": "cross-env NODE_ENV=test BABEL_ENV=test nodemon --exec mocha --recursive ./test/ --compilers js:babel-core/register",
-    "test:test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test": "cross-env NODE_ENV=test nodemon --exec mocha --recursive ./test/ --compilers js:babel-core/register",
+    "test:set": "cross-env NODE_ENV=test nodemon --exec mocha --recursive ./test/ --compilers js:babel-core/register",
     "test:watch": "npm run test:set"
   },
   "author": "SOSANA",
@@ -21,7 +20,7 @@
     "body-parser": "^1.15.2",
     "cross-env": "^3.1.4",
     "express": "^4.14.0",
-    "mongoose": "^4.7.7"
+    "mongoose": "^4.7.1"
   },
   "devDependencies": {
     "eslint": "3.13.0",
