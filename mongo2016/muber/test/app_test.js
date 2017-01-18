@@ -1,5 +1,5 @@
 import assert from 'assert';
-import request from 'supertest'; // simulates requests
+import request from 'supertest'; // eslint-disable-line
 import app from '../app';
 
 describe('The express app', () => {
